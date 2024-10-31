@@ -1,5 +1,6 @@
 import 'package:aegis_vision_app/screens/alert_screen.dart';
 import 'package:aegis_vision_app/screens/analytics_screen.dart';
+import 'package:aegis_vision_app/screens/cameras_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
@@ -18,6 +19,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     const HomeScreen(),
     AnalyticsScreen(),
+    CamerasScreen(),
     AlertScreen(),
   ];
 
@@ -34,6 +36,7 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed, // Asegura que los ítems se ajusten
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -42,6 +45,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.account_tree_sharp),
             label: 'Análisis',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.videocam),
+            label: 'Cámaras',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.add_alert_rounded),
