@@ -1,4 +1,4 @@
-import 'package:aegis_vision_app/screens/login_screen.dart';
+import 'package:aegis_vision_app/Registers/login_screen.dart';
 import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Aegio Vision',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent  ),
         useMaterial3: true,
