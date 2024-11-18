@@ -20,7 +20,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     AnalyticsScreen(),
     CamerasScreen(),
-    AlertScreen(),
+    const AlertsScreen(),
   ];
 
   void _onItemTapped(int index) {

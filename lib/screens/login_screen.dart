@@ -142,17 +142,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                FilledButton(
-                  onPressed: _login,
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 50, vertical: 15),
-                    textStyle: const TextStyle(
-                      fontSize: 14,
-                    ),
-                  ),
-                  child: const Text('Iniciar Sesión'),
-                ),
                 const SizedBox(height: 20),
                 FilledButton(
                   //ir al main screen
@@ -173,7 +162,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       fontSize: 14,
                     ),
                   ),
-                  child: const Text('Ir al Home'),
+                  child: const Text('Ingresar'),
                 ),
               ],
             ),
